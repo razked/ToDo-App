@@ -1,0 +1,35 @@
+@import '../../App.scss';
+
+.tasks {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    .single {
+        width: calc(100% + 4rem);
+        height: 100%;
+        text-align: left;
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: row;
+        transform: translateX(-4rem);
+        transition: all .2s ease-in;
+
+        span {
+            padding: 0.8rem 1rem;
+            color: #666;
+            font-weight: 600;
+            transform: all .2s ease-in; 
+            flex-wrap: wrap;
+        }
+
+        &:nth-child(even) {
+            background-color: rgba(211, 211, 211, 0.2);
+        }
+
+        &:hover {
+            transform: translateX(0);         
+        }
+    }
+}

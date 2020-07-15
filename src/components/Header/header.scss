@@ -1,0 +1,46 @@
+@import '../../App.scss';
+
+.header {
+    background-color: $headerBg;
+    color: white;
+    padding: .3rem;
+    padding-top: 0;
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: .8rem;
+
+        span {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        button {
+            border: none;
+            color: white;
+            background-color: transparent;
+            font-size: 2rem;
+            font-weight: bolder;
+            cursor: pointer;
+            transition: all .2s ease;
+            backface-visibility: hidden;
+
+            &:hover {
+                transform: scale(1.1) translateY(-.2rem);
+                
+            }
+        }
+    }
+
+    input {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        &:focus {
+            outline: none;
+        }
+    }
+}
